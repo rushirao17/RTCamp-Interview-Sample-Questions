@@ -1,0 +1,131 @@
+RTCamp
+Q: What is Git and GitHub?
+Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously, providing features such as branching, merging, and committing changes.
+GitHub is a web-based platform that uses Git for version control. It provides a graphical interface, hosting for software development, and various collaborative features such as pull requests, issue tracking, and project management tools.
+
+Q: Difference between Git and GitHub?
+•	Git is a tool for version control, enabling local tracking of code changes.
+•	GitHub is a service that hosts Git repositories online, facilitating collaborative development with additional tools and features.
+
+Q: What are some alternatives to GitHub?
+•	GitLab: An open-source Git repository manager providing CI/CD pipelines.
+•	Bitbucket: A Git repository management solution by Atlassian, with strong integration with other Atlassian products.
+•	SourceForge: A web-based platform for version control and project management.
+•	AWS CodeCommit: A fully managed source control service hosted by AWS.
+•	Azure DevOps Repos: A set of version control tools hosted by Microsoft Azure.
+
+Q: What are cookies and sessions? Explain their difference.
+Cookies are small pieces of data stored on the client's browser by the server. They are used to remember information about the user between HTTP requests.
+Sessions are server-side storage of user information that are maintained throughout a user's interaction with a web application. They are identified by a session ID, which is usually stored in a cookie.
+Differences:
+•	Storage: Cookies are stored on the client-side, while sessions are stored on the server-side.
+•	Security: Sessions are generally more secure than cookies since they are stored server-side.
+•	Data Persistence: Cookies can persist for a longer time, while sessions typically expire when the browser is closed or after a set period of inactivity.
+
+Q: What is ReactJS and what happens when you change a state? Is it a library or framework?
+ReactJS is an open-source JavaScript library for building user interfaces, particularly single-page applications. When the state in a React component changes, React triggers a re-render of the component and its child components to reflect the updated state.
+React is considered a library, not a framework, because it focuses on the view layer of an application and does not provide a full suite of tools and patterns typically found in frameworks.
+
+Q: What are components in ReactJS?
+Components are the building blocks of a React application. They are independent, reusable pieces of code that define a part of the user interface. Components can be either functional (stateless) or class-based (stateful).
+
+Q: What is virtual DOM in React?
+The virtual DOM is a lightweight representation of the actual DOM used by React to optimize updates. React creates a virtual DOM tree, compares it with the previous version, and efficiently updates only the changed elements in the real DOM.
+
+Q: What is JSX? How is JSX parsed into JavaScript?
+JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within JavaScript. JSX is parsed into JavaScript using Babel or a similar transpiler, which converts JSX into React.createElement() calls.
+
+Q: What is the use of Webpack?
+Webpack is a module bundler for JavaScript applications. It takes modules with dependencies and generates static assets representing those modules. Webpack can handle various file types and preprocessors, bundle multiple assets, and optimize code for production.
+
+Q: Suppose a website is very fast and I'm willing to make it slow. What actions could be taken?
+To intentionally slow down a website, you could:
+•	Add excessive, unoptimized images and media.
+•	Include numerous, large JavaScript files without minification or compression.
+•	Use inefficient algorithms or excessive computations in the client-side code.
+•	Make multiple, unnecessary network requests or introduce delays.
+•	Disable caching mechanisms.
+
+Q: What is CDN? How does CDN work?
+A Content Delivery Network (CDN) is a system of distributed servers that deliver web content to users based on their geographic location. CDNs improve load times by serving content from the nearest server, reducing latency and bandwidth usage.
+
+Q: What is indexing in a database? Does indexing affect only fetching, or does it affect insertion and updation also?
+Indexing is a database optimization technique that improves the speed of data retrieval operations. Indexes affect:
+•	Fetching: Significantly speeds up query performance.
+•	Insertion and Updating: Can slow down these operations as the database must update the indexes whenever data is inserted or updated.
+
+Q: How will you move a commit from one branch to another branch?
+To move a commit from one branch to another:
+1.	Checkout to the branch where you want the commit.
+2.	Use git cherry-pick <commit-hash> to apply the commit from another branch.
+
+Q: What does the git stash command do?
+The git stash command temporarily saves changes in the working directory that are not ready to be committed. This allows you to switch branches or perform other tasks without losing your current work. You can later apply the stashed changes with git stash apply.
+
+Q: Which website will be faster: the one built with JavaScript or the one built with React?
+The performance of a website depends on various factors such as how JavaScript or React is used, the complexity of the application, and optimization techniques employed. React can be very efficient due to its virtual DOM and component-based architecture, but a well-optimized plain JavaScript application can also be very fast. Generally, React's optimizations can make complex UIs faster than traditional JavaScript methods.
+
+Q: What actions could be taken to make a website faster?
+To make a website faster, you could:
+•	Optimize images and media files.
+•	Minimize and bundle JavaScript and CSS files.
+•	Use a CDN to deliver content.
+•	Enable browser caching.
+•	Implement lazy loading for images and other resources.
+•	Optimize server-side code and database queries.
+•	Reduce the number of HTTP requests.
+
+Q: Where is session data stored on backend servers?
+Session data is typically stored in server memory, databases, or dedicated session stores such as Redis or Memcached.
+
+Q: Git stores all the data in which folder?
+Git stores all its data in the .git directory located at the root of the repository.
+
+Q: How does the .gitignore file work?
+The .gitignore file specifies files and directories that Git should ignore and not track. Patterns defined in this file are matched against file paths, and if a match is found, those files are excluded from version control operations.
+
+Q: How to verify an email? Which is the best method to verify the email: client-based or server-based?
+To verify an email, you can send a confirmation link or code to the user's email address. The user must click the link or enter the code to verify their email.
+Server-based email verification is generally more secure and reliable than client-based verification as it reduces the risk of tampering and ensures that the verification process is handled on a secure server.
+
+Q: Will sessions work if we decline cookies?
+If cookies are declined, traditional session management methods may not work as the session ID is typically stored in a cookie. Alternative methods include URL-based session IDs or using local storage, but these come with their own security and usability issues.
+
+Q: Why does the session get destroyed automatically when reopening a website after closing it?
+Sessions are typically tied to the lifetime of the browser session, meaning they expire when the browser is closed. To maintain sessions across browser restarts, you would need to implement persistent login mechanisms such as "remember me" features using long-lived cookies.
+
+Q: What is GitHub's cherry-pick command?
+The git cherry-pick command allows you to apply the changes introduced by a specific commit from one branch onto another branch.
+
+Q: What is DOM?
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, allowing programs to manipulate the document's content, structure, and styles.
+
+Q: What is encryption and decryption? What is hashing? What is the purpose of salting?
+•	Encryption is the process of converting plaintext into ciphertext to prevent unauthorized access.
+•	Decryption is the process of converting ciphertext back into plaintext.
+Hashing is the process of converting data into a fixed-size hash value, often used for data integrity and password storage.
+Salting involves adding random data to a password before hashing to ensure that identical passwords produce different hash values, enhancing security against attacks.
+
+Q: How does JWT work? How do symmetric and asymmetric algorithms work? What is encryption and decryption? Different algorithms for encryption and hashing?
+JWT (JSON Web Token) is a compact, URL-safe means of representing claims to be transferred between two parties. JWTs are used for authentication and information exchange, consisting of a header, payload, and signature.
+Symmetric algorithms use the same key for encryption and decryption (e.g., AES).
+Asymmetric algorithms use a pair of keys, one for encryption (public key) and one for decryption (private key) (e.g., RSA).
+Encryption Algorithms: AES, RSA, DES. Hashing Algorithms: SHA-256, MD5, bcrypt.
+
+Q: Do all hashing algorithms generate a hash value of a fixed size string of characters?
+Yes, all hashing algorithms produce a fixed-size hash value, regardless of the input size.
+
+Q: Can there be two computers with the same public IP?
+Yes, if they are behind the same NAT (Network Address Translation) router, which maps multiple private IP addresses to a single public IP address.
+
+Q: How does a router assign IP addresses to computers? What happens when you hit a URL when connected to a router?
+A router assigns IP addresses to computers using DHCP (Dynamic Host Configuration Protocol). When you hit a URL, the following steps occur:
+1.	The browser sends a DNS request to resolve the domain name to an IP address.
+2.	The browser sends an HTTP request to the server at the resolved IP address.
+3.	The server processes the request and sends back the response, which the browser renders.
+
+Q: What if two computers connected with the same router are assigned the same IP address?
+If two computers are assigned the same IP address within a network, an IP address conflict occurs, leading to network connectivity issues for both devices.
+
+
+
